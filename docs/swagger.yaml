@@ -1,0 +1,64 @@
+info:
+  contact: {}
+paths:
+  /api/compare:
+    post:
+      consumes:
+      - multipart/form-data
+      description: 查询2个Excel文件中列的重复数据
+      parameters:
+      - description: 文件1
+        in: formData
+        name: file1
+        required: true
+        type: file
+      - description: 文件2
+        in: formData
+        name: file2
+        required: true
+        type: file
+      - description: 文件1数据是从第几行开始
+        in: query
+        name: line1
+        required: true
+        type: string
+      - description: 文件1要对比第几列
+        in: query
+        name: column1
+        required: true
+        type: string
+      - description: 文件2数据是从第几行开始
+        in: query
+        name: line2
+        required: true
+        type: string
+      - description: 文件2要对比第几列
+        in: query
+        name: column2
+        required: true
+        type: string
+      produces:
+      - application/octet-stream
+      responses:
+        "200":
+          description: '{"code":200,"data":{},"msg":"OK"}'
+          schema:
+            type: string
+        "401":
+          description: '{"code":401,"data":{},"msg":"UNAUTHORIZED"}'
+          schema:
+            type: string
+        "500":
+          description: '{"code":500,"data":{},"msg":"SERVERERROR"}'
+          schema:
+            type: string
+        "80002":
+          description: '{"code":80002,"data":{},"msg":"PARAMCHECKFAILED"}'
+          schema:
+            type: string
+        "80003":
+          description: '{"code":80003,"data":{},"msg":"DATABASEOPFAILED"}'
+          schema:
+            type: string
+      summary: 查询2个Excel文件中列的重复数据
+swagger: "2.0"

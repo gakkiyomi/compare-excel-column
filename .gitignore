@@ -4,7 +4,7 @@
 *.dll
 *.so
 *.dylib
-
+compare-excel-column
 # Test binary, built with `go test -c`
 *.test
 
