@@ -5,6 +5,7 @@
 *.so
 *.dylib
 compare-excel-column
+result.txt
 # Test binary, built with `go test -c`
 *.test
 

@@ -112,7 +112,7 @@ func Compare(c *gin.Context) {
 					continue
 				}
 
-				if len(row.Cells) < temp3 || row.Cells[temp4].Value == "" {
+				if len(row.Cells) < temp4 || row.Cells[temp4].Value == "" {
 					continue
 				}
 				name := row.Cells[temp4].Value

@@ -6,7 +6,7 @@ require (
 	github.com/Ullaakut/nmap v2.0.2+incompatible // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/daba0007/golib v0.0.0-20210207071852-24f01ef08106 // indirect
-	github.com/gakkiyomi/galang v0.0.0-20210421090600-5e5fad6c0e13
+	github.com/gakkiyomi/galang v0.0.0-20210423025615-5fc9b53b04be
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-openapi/spec v0.19.9 // indirect
 	github.com/go-openapi/swag v0.19.9 // indirect
